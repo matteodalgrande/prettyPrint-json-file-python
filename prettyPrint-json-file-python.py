@@ -13,7 +13,7 @@ if num_arg == int(2):
         parsed_json = json.loads(str(t))
         indent_json = json.dumps(parsed_json, indent=4, sort_keys=True)
         f.close()
-        print("Done! Now you can open the file.")
+        print("[Ok] - Done! Now you can open the file.")
     with open(name_file, 'w+') as f:
         f.write(indent_json)
         f.close()
